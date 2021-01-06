@@ -5,7 +5,7 @@ from security import authenticate , identity
 
 app= Flask(__name__)
 app.config["PROPAGATE_EXCEPTIONS"] = True
-app.secret_key= 'rahul'
+app.secret_key= 'myseckey'
 api = Api(app)
 jwt =JWT(app, authenticate, identity)    # /auth
 items = []
